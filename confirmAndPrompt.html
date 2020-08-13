@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prompt and confirm</h1>
+    <script>
+      const r = confirm("Press ok or cancel");
+      function checking() {
+        if (r == true) {
+          alert("you have pressed yes");
+        } else {
+          alert("you have pressed cancel");
+        }
+      }
+      function prompting() {
+        prompt("You typing will be displayed", "");
+      }
+    </script>
+    <input type="button" value="comfirming" onClick="confirming()" />
+    <input type="button" value="prompting" onClick="prompting()" />
+  </body>
+</html>
