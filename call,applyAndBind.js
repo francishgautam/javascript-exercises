@@ -16,3 +16,10 @@ var anotherArr = [4, 5, 6];
 console.log(applying.apply(array, anotherArr));
 
 //...........................
+
+function binding(arg) {
+  return this.name + arg;
+}
+
+var newFunction = binding.bind(obj);
+console.log(newFunction("bacon"));
