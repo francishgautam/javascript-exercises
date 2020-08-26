@@ -1,4 +1,17 @@
-var arr = [1, 2, 3];
-var newArray = [4, 5, 6];
+function doWhile() {
+  var i = 0;
+  do {
+    console.log(i);
+    i++;
+  } while (i < 3);
+}
+doWhile();
 
-cons
+function whileOnly() {
+  var i = 0;
+  while (i < 3) {
+    console.log(i);
+    i++;
+  }
+}
+whileOnly();
