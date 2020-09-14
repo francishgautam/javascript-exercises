@@ -30,8 +30,9 @@ console.log(newArray);
 //................. Rest
 
 function multiply(multiplier, ...numbers) {
-  let result = numbers.forEach((element) => {
-    multiplier * element;
+  let result = [];
+  result = numbers.forEach((element) => {
+    result.push(multiplier * element);
   });
   console.log(result);
 }
